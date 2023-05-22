@@ -374,8 +374,7 @@ class Ventana1(QMainWindow):
         self.ventanaDialogo.setLayout(self.vertical)
 
 
-        # variable para controral si el ingreso de los datos estan correctos
-        self.datosCorrectos = True
+
 
     def accion_botonLimpiar(self):
         self.nombrecompleto.setText('')
@@ -394,6 +393,8 @@ class Ventana1(QMainWindow):
 
     def accion_botonRegistrar(self):
 
+        # variable para controral si el ingreso de los datos estan correctos
+        self.datosCorrectos = True
 
 
         # validamos que los passwords sean iguales
