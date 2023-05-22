@@ -1,0 +1,3 @@
+juan pablo cardona;jpcard;12345;10123;jp@gmail.com;color;azul;numero;7;hola;mundo
+a;a;a;a;a;a;a;aa;a;a;a
+ricardo cardona;ricard;12345;121212;jpcard@gmail.com;trabajo;si;moto;si;casa;no
