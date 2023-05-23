@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import QMainWindow, QDesktopWidget, QLabel, QHBoxLayout, QA
     QPushButton, QDialog, QDialogButtonBox, QVBoxLayout
 from PyQt5 import QtGui, QtCore
 from cliente import Cliente
+from ventana2 import Ventana2
 
 
 class Ventana1(QMainWindow):
@@ -217,7 +218,7 @@ class Ventana1(QMainWindow):
 
         # Le ponemops color de textos y margenes
         self.letrero4.setStyleSheet("Color: red; margin-bottom: 40px;"
-                                    "margin-top:20px;"
+                                    "margin-top:10px;"
                                     "padding-bottom:10px;"
                                     "border: 2px solid #C0C0C0;"
                                     "border-left: none;"
@@ -326,6 +327,26 @@ class Ventana1(QMainWindow):
 
         # agregamos los botones al layout derecho
         self.ladoDerecho.addRow(self.botonBuscar, self.botonRecuperar)
+
+        #--- BOTON CONTINUAR -----
+        #hacemos el boton
+        self.botonContinuar = QPushButton("Continuar")
+        #establecemos el ancho
+        self.botonContinuar.setFixedWidth(90)
+        #establecemos estilos
+        self.botonContinuar.setStyleSheet('background-color: #008845;'
+                                          'color: #FFFFFF;'
+                                          'padding: 10px;'
+                                          'margin-top: 10px;'
+                                        )
+
+        #metodo
+        self.botonContinuar.clicked.connect(self.accion_botonContinuar)
+
+        #agregamos boton al layout derecho
+        self.ladoDerecho.addRow(self.botonContinuar)
+
+
 
 
         # agregamos el layout ladoDerecho al layout horizontal
@@ -716,6 +737,11 @@ class Ventana1(QMainWindow):
                 #hacemos que la ventana de dialogo se vea
                 self.ventanaDialogo.exec_()
 
+    #metodo boton continuar
+    def accion_botonContinuar(self):
+        self.hide()
+        self.ventana2 = Ventana2(self)
+        self.ventana2.show()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
