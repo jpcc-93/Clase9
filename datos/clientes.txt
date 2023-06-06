@@ -1,2 +1,5 @@
 ricardo cardona;ricard;12345;121212;jpcard@gmail.com;trabajo;si;moto;si;casa;no
-ana medina;anam123;12345678;123789;ana@elpoli.edu.com;carro;no;moto;no;avion;no
+ana medina;ana123;12345678;123789;ana@elpoli.edu.com;carro;no;moto;no;avion;no
+claudia;paty;123456;43815024;calla@calla;carro;no;moto;si;avion;no
+a;a;4;4;a;a;a;a;a;a;a
+b;b;2;2;b;b;b;b;b;b;b
